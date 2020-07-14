@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="EUC-KR"/>
+  <title>Someting</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="mainError">
+  <header>
+    <p id="Errorname">NullPointerException</p>
+  </header>
+  <section>
+    <h4>ErrorLog : </h4>
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2913)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+    at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+    at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+    at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+    at android.os.Handler.dispatchMessage(Handler.java:106)
+    at android.os.Looper.loop(Looper.java:193)
+    at android.app.ActivityThread.main(ActivityThread.java:6669)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+    Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
+    at com.example.projectseminar.MainActivity.onCreate(MainActivity.java:24)
+    at android.app.Activity.performCreate(Activity.java:7136)
+    at android.app.Activity.performCreate(Activity.java:7127)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)?
+    at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)?
+    at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)?
+    at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)?
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)?
+    at android.os.Handler.dispatchMessage(Handler.java:106)?
+    at android.os.Looper.loop(Looper.java:193)?
+    at android.app.ActivityThread.main(ActivityThread.java:6669)?
+    at java.lang.reflect.Method.invoke(Native Method)?
+    at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)?
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)?
+  </section>
+  <aside>
+    <p>LogQueue</p>
+    <article>
+      <h5>NullPointerException</h5>
+    </article>
+  </aside>
+  <footer>
+    <p>important : </p>
+  </footer>
+</div>
+<script src="index.js">
+
+</script>
+</body>
+</html>
