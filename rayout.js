@@ -12,5 +12,6 @@ const server = app.listen(3000, function(){
 app.use(express.static('public'));
 
 let fileR = require('./fileRead');
-
 fileR.readFile();
+fileR.printLog();
+
