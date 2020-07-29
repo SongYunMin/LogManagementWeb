@@ -14,4 +14,3 @@ app.use(express.static('public'));
 let fileR = require('./fileRead');
 fileR.readFile();
 fileR.printLog();
-
