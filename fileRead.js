@@ -1,9 +1,14 @@
 const express = require('express');
 const ejs = require('ejs');
+const bodyParser = require('body-parser');
 const app = express();
-app.set('views', __dirname + "/public");
-app.set('view engine', 'ejs');
 
+app.set("view engine","ejs");
+app.use(express.static(__dirname+'/'));
+
+app.get('/',function (req,res) {
+  res.render("test1",{});
+});
 
 //TODO : Nodejs 환경에서 html DOM 사용 불가
 function readFile() {
@@ -28,6 +33,7 @@ function printLog(req, res) {
   res.render('public/fileRead', {name: name});
 
 }
+
 
 module.exports = {
   readFile: readFile,
